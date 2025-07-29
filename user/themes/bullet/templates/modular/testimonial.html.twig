@@ -1,0 +1,41 @@
+{% set content = page.header.content %}
+
+
+{% block content %}
+    <div class="testimonial-section"> 
+        <div class="container">
+
+            <div class="my-service"> 
+                <p class="section-name"> {{content.title}} </p>
+                <h2 class="section-title"> {{content.head}} </h2>
+            </div>
+            
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+                    {% for testimonial in page.header.testimonials %}
+                    <div class="swiper-slide">
+                        <div class="testimonial-box">
+                            <p class="testimonial-text">“{{ testimonial.text }}”</p>
+                            <div class="testimonial-author">
+                                <img src="{{ url(testimonial.image) }}" alt="{{ testimonial.name }}">
+                                <div>
+                                    <strong>{{ testimonial.name }}</strong><br>
+                                    <small>{{ testimonial.title }}</small><br>
+                                    {% for i in 1..testimonial.rating %}
+                                        ⭐
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+{% endblock %}
+
+            <!-- Optional arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>

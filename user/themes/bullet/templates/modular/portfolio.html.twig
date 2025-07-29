@@ -1,0 +1,30 @@
+{% set items = page.header.portfolio_items | default([]) %}
+{% set categories = [] %}
+
+{% for item in items %}
+  {% if item.category not in categories %}
+    {% set categories = categories | merge([item.category]) %}
+  {% endif %}
+{% endfor %}
+
+{% set categories = categories | sort %}
+
+<div class="portfolio">
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    {% for category in categories %}
+      <button class="filter-btn" data-filter="{{ category }}">{{ category|capitalize }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="portfolio-card">
+    {% for item in items %}
+      <div class="portfolio-item col-5 {{ item.category }}">
+        <img class="w-100" src="{{ page.media[item.image].url }}" alt="{{ item.title }}">
+        <div class="branding_name"> 
+            <h2> {{item.title}} </h2>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

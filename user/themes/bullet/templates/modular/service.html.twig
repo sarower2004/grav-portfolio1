@@ -1,0 +1,38 @@
+{% set content = page.header.content %}
+{% set service = page.header.services %}
+
+
+
+
+{% block content %}
+
+    <div class="testimonial-section">
+         <div class="container">
+            <div class="my-service"> 
+                <p class="section-name"> {{content.title}} </p>
+                <h2 class="section-title"> {{content.head}} </h2>
+            </div>
+
+            <div class=" d-flex
+            flex-sm-column
+            flex-md-column
+            flex-lg-row gap-5 
+            justify-content-sm-center
+            justify-content-md-center 
+            justify-content-lg-around
+            items-center-center ">
+                {% for service in page.header.services %}
+                <div class="service-card">
+                    <div class="card p-3 gap-4" style="width: 18rem;">
+                        <img class="img w-25 " src="{{page.media[service.icon].url}}" alt="banner">
+                        <h3 class="card-title"> {{service.name}} </h3>
+                        <p class="card text"> {{service.description}} </p>
+                        <a href="#" class="card-link"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

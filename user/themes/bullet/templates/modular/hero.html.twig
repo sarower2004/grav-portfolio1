@@ -1,0 +1,30 @@
+
+{% set hero = page.header.hero %}
+
+{% block content %}
+
+    <section class="hero-section">
+        <div class="container ">
+            <div class="hero-content">
+                <div class="row"> 
+
+                    <div class="hero-left d-flex flex-sm-column flex-md-row justify-content-center align-items-center  ">
+                        <div class="col-sm-12 col-md-8 hero-text">
+                            <h1 class="head-title"> {{hero.hello}} </h1>
+                            <h1 class="head-title"> {{hero.heading}} </h1>
+                            <p class="head_details"> {{hero.description}} </p>
+                            <div class="hero_button menu-button">
+                                <a href="#" class="btn btn-primary "> {{hero.btn}} <span> <i class="fa-solid fa-arrow-right"></i></span> </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-4 hero-image">
+                            <img class="img" src="{{page.media[hero.owner_image].url}}" alt="banner">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>    
+    </section>
+
+{% endblock %}

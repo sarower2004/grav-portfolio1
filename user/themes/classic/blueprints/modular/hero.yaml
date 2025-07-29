@@ -1,0 +1,33 @@
+title: Hero
+'@extends':
+  type: default
+
+form:
+  fields:
+    tabs:
+
+      fields:
+        content:
+
+          fields:
+            newSection:
+              type: section
+              title: Hero Section
+              fields:
+                header.hero.heading:
+                  type: text
+                  label: Heading
+                header.hero.details:
+                  type: text
+                  label: details
+                header.hero.btn.btn01:
+                  type: text
+                  label: Button 01
+                header.hero.btn.btn02:
+                  type: text
+                  label: Button 02
+                header.hero.image:
+                  type: pagemediaselect
+                  label: Banner Image
+                  
+                

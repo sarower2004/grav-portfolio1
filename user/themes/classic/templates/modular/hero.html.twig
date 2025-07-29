@@ -1,0 +1,32 @@
+
+{% set hero = page.header.hero %}
+
+
+
+{% block content %}
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="wrapper">
+                <div class="row"> 
+
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <div class="col-8">
+                            <h1 class="head"> {{hero.heading}} </h1>
+                            <p class="head_details"> {{hero.details}} </p>
+                            <div class="hero_button d-flex gap-5">
+                                <a href="#" class="btn btn-primary d-flex gap-2 align-items-center"> {{hero.btn.btn01}} <span> <i class="fa-solid fa-arrow-right"></i></span> </a>
+                                <a href="#" class="btn btn-success d-flex gap-2 align-items-center"> {{hero.btn.btn02}} <span> <i class="fa-solid fa-arrow-right"></i></span> </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3">
+                            <img class="img w-100" src="{{page.media[hero.image].url}}" alt="banner">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>    
+    </section>
+
+{% endblock %}

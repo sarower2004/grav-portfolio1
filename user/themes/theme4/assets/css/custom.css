@@ -1,0 +1,147 @@
+/* Core Stuff */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Vollkorn", serif;
+}
+:root{
+    --primary-color: rgb(34, 34, 34);
+    --secondary-color: #2168d3f8;
+    --heading-color:white;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--primary-color);
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary-color);
+} */
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+pre {
+    background: #F0F0F0;
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+blockquote {
+    border-left: 10px solid #eee;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+/* Utility Classes */
+.wrapper {
+    margin: 0 3rem;
+}
+
+.padding {
+    padding: 3rem 1rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Content Styling */
+
+.profile {
+    border: 5px solid white;
+}
+
+.banner-text {
+    font-size: 100px;
+}
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: white;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .banner_part{
+    margin-left: 250px;
+    margin-bottom: 100px;
+  }
+/* About Css start */
+
+  .about_section {
+    margin-left: 260px;
+    margin-bottom: 100px;
+  }
+
+  .title_underline{
+    width: 90px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
+  .about_text{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .about_text .btn{
+    width: 150px;
+    padding: 10px 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+  }
+  .about_text .btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
+  .image_box img{
+    max-width: 100%;
+  }
+  .slider_container{
+    padding: 0 100px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  

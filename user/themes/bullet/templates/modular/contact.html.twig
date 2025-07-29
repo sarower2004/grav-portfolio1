@@ -1,0 +1,50 @@
+{% set content = page.header.content %}
+{% set form = page.header.form %}
+
+
+
+
+{% block content %}
+
+    <div class="about-section">
+        <div class="container">
+              <div class="row">
+                    <div class="col-6 text-center">
+                        <img class="img w-75" src="{{page.media[content.image].url}}" alt="demo.png"/>
+                    </div>
+
+                    <div class="col-6 d-flex flex-column gap-5">
+                       
+                         <div class=""> 
+                            <p class="section-name"> {{content.title}} </p>
+                            <h2 class="about-title"> {{content.head}} </h2>
+                        </div>
+                    {% for form in page.header.form %}
+                        <form class="custom-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="{{form.name}}">
+                                <input type="email" placeholder="{{form.email}}">
+                            </div>
+                            <div class="form-row">
+                                <input type="text" placeholder="{{form.phone}}">
+                                <input type="text" placeholder="{{form.subject}}">
+                            </div>
+                            <div class="form-row">
+                                <input type="text" placeholder="{{form.details}}">
+                            </div>
+                        </form>
+                   
+
+
+                        <div class="d-flex justify-content-start align-items-center menu-button">
+                            <a href="#" class="btn btn-outline-primary">{{form.btn}}</a>
+                        </div>
+                    {% endfor %}
+                                        
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

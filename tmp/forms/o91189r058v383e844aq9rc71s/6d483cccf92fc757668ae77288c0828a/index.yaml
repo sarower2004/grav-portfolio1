@@ -1,0 +1,33 @@
+form: flex-pages
+id: 'tmp://forms/session/6d483cccf92fc757668ae77288c0828a'
+unique_id: 6d483cccf92fc757668ae77288c0828a
+url: '/pages/home/_contact/_blog/:add'
+user:
+  username: admin3
+  email: admin@gmail.com
+timestamps:
+  created: 1746767276
+  updated: 1746767276
+data: null
+files: {  }
+object:
+  type: pages
+  key: home/_contact/_blog
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META: {  }
+    storage_key: ''
+    parent_key: 01.home/07._contact
+    order: false
+    folder: _blog
+    template: blog
+    lang: ''
+    root: false
+    route: /home/_contact
+    name: modular/blog
+    modular: '1'
+    header:
+      title: Blog
+      body_classes: modular
+    frontmatter: "title: Blog\nbody_classes: modular\n"

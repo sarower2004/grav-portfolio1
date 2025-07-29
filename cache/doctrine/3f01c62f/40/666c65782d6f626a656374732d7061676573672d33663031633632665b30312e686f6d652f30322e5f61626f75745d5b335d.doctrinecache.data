@@ -1,0 +1,4 @@
+1753714461
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"home/_about";s:8:"elements";a:9:{s:4:"root";b:0;s:11:"storage_key";s:0:"";s:6:"header";a:2:{s:5:"title";s:5:"About";s:12:"body_classes";s:7:"modular";}s:5:"route";s:5:"/home";s:4:"name";s:8:"about.md";s:7:"modular";s:1:"1";s:11:"frontmatter";s:35:"title: About
+body_classes: modular
+";s:4:"slug";s:6:"_about";s:8:"ordering";b:1;}s:7:"storage";a:6:{s:3:"key";s:11:"home/_about";s:11:"storage_key";s:17:"01.home/02._about";s:8:"template";s:5:"about";s:17:"storage_timestamp";i:1753713849;s:8:"markdown";a:1:{s:0:"";a:1:{s:5:"about";i:1753711319;}}s:8:"checksum";s:32:"bb6ea5df68eb9c26fd26ce9fbab79125";}}

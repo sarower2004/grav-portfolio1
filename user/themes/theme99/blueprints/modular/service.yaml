@@ -1,0 +1,39 @@
+title: Hero
+'@extends':
+  type: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            newSection:
+              type: section
+              title: Hero Section
+              fields:
+                header.content.title:
+                  type: text
+                  label: Section Title
+
+                header.content.head:
+                  type: text
+                  label: Section Head
+
+                header.services:
+                  type: list
+                  label: Services
+                  fields:
+                    .name:
+                      type: text
+                      label: Service Name
+                    .description:
+                      type: text
+                      label: Service Description
+                    .icon:
+                      type: pagemediaselect
+                      label: Icon
+
+               
+                  
+                

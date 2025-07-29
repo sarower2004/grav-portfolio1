@@ -1,0 +1,22 @@
+title: Hero
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        buttons:
+          type: section
+          title: Hero
+          fields:
+            header.hero_classes:
+              type: text
+              label: Hero Classes
+              details: 
+            header.hero_image:
+              type: pagemediaselect
+              label: Hero Image
+              preview_images: true
+    
+
+

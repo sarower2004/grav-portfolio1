@@ -1,0 +1,39 @@
+{% set content = page.header.content %}
+{% set project = page.header.project %}
+
+{% block content %}
+
+    <div class="recent-section">
+         <div class="container">
+            <div class="d-flex justify-content-center align-items-center"> 
+                <p class="recent_title"> {{content.title}} </p>
+                <div class="d-flex justify-content-between">
+                    <h2 class="recent_head"> {{content.head}} </h2>
+                    <div class="arrow"> 
+                       <a href="#"  class='btn'> <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a href="#"  class='btn'> <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" d-flex justify-content-around ">
+                {% for project in page.header.project %}
+                <div class="card recent" style="width: 20rem;">
+                    <img src="{{page.media[project.image].url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">{{project.title}}</p>
+                        <h5 class="card-title">{{project.heading}} </h5>
+                        <p class="card-text details">{{project.details}}</p>
+                         <a href="#" class="link d-flex align-items-center gap-2">{{project.btn}}<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                 </div>
+                {% endfor %}
+            </div>
+
+            <div class=" d-flex justify-content-center items-center menu-button mt-5 mb-5 ">
+                 <a href="#" class="btn btn-outline-primary">Explore Me</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

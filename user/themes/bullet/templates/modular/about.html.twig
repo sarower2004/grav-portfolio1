@@ -1,0 +1,60 @@
+{% set content = page.header.content %}
+
+
+
+
+
+{% block content %}
+
+    <div class="about-section">
+        <div class="cotainer">
+              <div class="row">
+                    <div class="col-6 text-center">
+                        <img class="img w-75" src="{{page.media[content.image].url}}" alt="demo.png"/>
+                    </div>
+
+                    <div class="col-6 d-flex flex-column gap-2">
+                       
+                         <p class="section-name"> {{content.title}} </p>
+                        <h2 class="about-title"> {{content.head}} </h2>
+                        <p class=""> {{content.description}} </p>
+
+                        <div class="d-flex justify-content-start align-items-center menu-button">
+                            <a href="#" class="btn btn-outline-primary">Download CV</a>
+                        </div>
+                                        
+                    </div>
+            </div>
+            <div class="row">
+
+            <div class="d-flex justify-content-evenly align-aitems-center skills">
+                    {% set radius = 50 %}
+                    {% set circumference = 2 * 3.1416 * radius %}
+
+                    {% for skill in page.header.skills %}
+                        {% set offset = circumference - (circumference * skill.percentage / 100) %}
+
+                        <div class="skill-card">
+                        <div class="circle">
+                            <svg width="120" height="120">
+                            <circle cx="60" cy="60" r="{{ radius }}" stroke="#eee" stroke-width="10" fill="none"/>
+                            <circle cx="60" cy="60" r="{{ radius }}" 
+                                    stroke="{{ skill.color }}" stroke-width="10" fill="none"
+                                    stroke-dasharray="{{ circumference }}"
+                                    stroke-dashoffset="{{ offset }}"
+                                    stroke-linecap="round"
+                                    style="transition: stroke-dashoffset 1s ease-out;" />
+                            </svg>
+                            <div class="percentage">{{ skill.percentage }}%</div>
+                        </div>
+                        <div class="skill-title">{{ skill.name }}</div>
+                        </div>
+                    {% endfor %}
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

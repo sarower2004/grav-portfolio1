@@ -1,0 +1,70 @@
+{% set content = page.header.content %}
+{% set title = page.header.title %}
+
+
+{% block conntent %}
+    <section class="about_section">
+        <div class"container">
+            <div class="row">
+                <div class="col-6">
+                    <h2> {{page.title}} </h2>
+                    <div class="title_underline"></div>
+                    <div class="about_text">
+                        <h1> {{content.heading}} </h1>
+                        <p> {{content.description}} </p>
+                        <a class="btn"> {{content.btn}} </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="slider_container">
+                        <div class="swiper card_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image_box">
+                                    <img src="{{page.media[content.slide1].url}}" alt="demo.png"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_box">
+                                    <img src="{{page.media[content.slide2].url}}" alt="demo.png"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_box">
+                                    <img src="{{page.media[content.slide3].url}}" alt="demo.png"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_box">
+                                    <img src="{{page.media[content.slide4].url}}" alt="demo.png"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_box">
+                                    <img src="{{page.media[content.slide5].url}}" alt="demo.png"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_box">
+                                    <img src="{{page.media[content.slide6].url}}" alt="demo.png"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_box">
+                                    <img src="{{page.media[content.slide7].url}}" alt="demo.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="swiper-button-next"></div>
+                                 <div class="swiper-button-prev"></div>
+                                 <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

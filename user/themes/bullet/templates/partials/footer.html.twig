@@ -1,0 +1,37 @@
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex flex-column align-items-center gap-3">
+                {# Logo Section #}
+                <div class="footer-logo">
+                    <a href="{{ base_url() }}">
+                       <img src="{{page.media['theme://images/flogo.png'].url}}" />
+                    </a>
+                </div>
+                <div class="">
+                    {# Menu Links Section #}
+                    <div class="footer-menu d-flex gap-3">
+                        {% for page in pages.children.visible %}
+                        <li class="footer-link {% if page.active or page.activeChild %} active{% endif %}">
+                        <a class=" menu" href="{{ page.url }}">{{ page.menu }}</a>
+                        </li>
+                    {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                           <a href="#" class="link"> <i class="fa-brands fa-skype"></i> </a>
+                           <a href="#" class="link"> <i class="fa-brands fa-instagram"></i></i> </a>
+                           <a href="#" class="link"> <i class="fa-brands fa-linkedin"></i> </a>
+                </div>
+
+                <div class="col-12 text-center footer-copyright pt-4">
+                    >&copy; {{ "now"|date("Y") }} {{ site.title }}. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</footer>

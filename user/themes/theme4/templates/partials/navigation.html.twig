@@ -1,0 +1,33 @@
+{# templates/partials/navbar.html.twig #}
+{% set content = page.header.content %}
+{% set home = page.find('/home') %}
+
+
+
+
+<nav class="bg-dark text-white p-4 vh-100 d-flex flex-column align-items-center position-fixed" style="width: 250px;">
+
+{% if home.media['profile.jpg'] %}
+
+  <div>
+    <img src="{{ home.media['profile.jpg'].url }}" alt="Profile" class="rounded-circle mb-3 profile" style="width: 120px; height: 120px; object-fit: cover;">
+  </div>
+
+  {% endif %}
+  <h5 class="mb-4 text-white fs-6">MD SAROWER JAHAN</h5>
+  <ul class="nav flex-column w-100">
+    {% for page in pages.children.visible %}
+      <li class="nav-item">
+        <a class="nav-link text-white px-3 {% if page.active or page.activeChild %}fw-bold{% endif %}" href="{{ page.url }}" style="font-weight: normal;">
+          {{ page.menu }}
+        </a>
+      </li>
+      
+    {% endfor %}
+  </ul>
+  <style>
+    .nav-link:hover {
+      font-weight: bold;
+    }
+  </style>
+</nav>
