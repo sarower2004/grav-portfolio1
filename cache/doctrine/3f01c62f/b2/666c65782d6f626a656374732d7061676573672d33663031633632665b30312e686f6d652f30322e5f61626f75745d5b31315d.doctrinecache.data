@@ -1,0 +1,14 @@
+1753945828
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"home/_about";s:8:"elements";a:8:{s:4:"root";b:0;s:11:"storage_key";s:17:"01.home/02._about";s:6:"header";a:3:{s:5:"title";s:5:"About";s:12:"body_classes";s:7:"modular";s:7:"content";a:4:{s:7:"heading";s:19:"Developer Sarower !";s:11:"description";s:110:"A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog.";s:3:"btn";s:11:"Download CV";s:6:"slides";a:7:{i:0;a:1:{s:5:"slide";s:10:"slide1.jpg";}i:1;a:1:{s:5:"slide";s:10:"slide2.jpg";}i:2;a:1:{s:5:"slide";s:10:"slide3.jpg";}i:3;a:1:{s:5:"slide";s:10:"slide4.jpg";}i:4;a:1:{s:5:"slide";s:10:"slide5.jpg";}i:5;a:1:{s:5:"slide";s:10:"slide6.jpg";}i:6;a:1:{s:5:"slide";s:10:"slide7.jpg";}}}}s:11:"frontmatter";s:363:"title: About
+body_classes: modular
+content:
+    heading: 'Developer Sarower !'
+    description: 'A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog.'
+    btn: 'Download CV'
+    slides:
+        -
+            slide: slide1.jpg
+        -
+            slide: slide2.jpg
+        -
+            slide: slide3.jpg";s:4:"slug";s:6:"_about";s:4:"name";s:8:"about.md";s:5:"route";s:5:"/home";s:8:"ordering";b:1;}s:7:"storage";a:6:{s:3:"key";s:11:"home/_about";s:11:"storage_key";s:17:"01.home/02._about";s:8:"template";s:5:"about";s:17:"storage_timestamp";i:1753880852;s:8:"markdown";a:1:{s:0:"";a:1:{s:5:"about";i:1753880852;}}s:8:"checksum";s:32:"b4ebd4b5c620b1798f47eddddb2fb18d";}}

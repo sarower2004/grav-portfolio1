@@ -1,0 +1,5 @@
+1753881228
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"home";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:4:"Home";s:7:"content";a:2:{s:5:"items";s:13:"self@.modular";s:5:"image";s:10:"pofile.jpg";}}s:11:"frontmatter";s:67:"title: Home
+content:
+    items: self@.modular
+    image: pofile.jpg";s:8:"markdown";s:0:"";}s:7:"storage";a:7:{s:3:"key";s:4:"home";s:11:"storage_key";s:7:"01.home";s:8:"template";s:4:"home";s:17:"storage_timestamp";i:1753711319;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"home";i:1753704764;}}s:8:"children";a:2:{s:10:"01._banner";b:0;s:9:"02._about";b:0;}s:8:"checksum";s:32:"62484c3d09432362644f5ec36c4c76e7";}}

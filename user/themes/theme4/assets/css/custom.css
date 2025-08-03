@@ -140,8 +140,50 @@ blockquote {
   }
   .slider_container{
     padding: 0 100px;
-    max-width: 560px;
+    
     margin: 0 auto;
   }
 
+  /* @media (min-width: 320px){
+    .responsive_about{
+        flex-direction: column;
+    }
+  }
+    @media (min-width: 480px){
+    .responsive_about{
+        flex-direction: column;
+    }
+  }
+    @media (min-width: 768px){
+    .responsive_about{
+        flex-direction: row;
+    }
+  }
+    @media (min-width: 1200px){
+    .responsive_about{
+        flex-direction: row;
+    }
+  } */
+
+  /* Hobby part start */
+  /* .image_box img{
+    max-width: 40%;
+  } */
+  /* .swiper-slide .image_box {
+    max-width: 20%;
+    margin-bottom: 20px;
+  } */  
+   .hobby_section{
+    padding-left: 200px;
+   }
+    .swiper {
+      width: 240px;
+      height: 320px;
+    }
+
+    
+  .img_box img{
+    width: 100%;
+  }
+  
   

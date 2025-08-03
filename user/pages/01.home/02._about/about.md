@@ -5,12 +5,20 @@ content:
     heading: 'Developer Sarower !'
     description: 'A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog.'
     btn: 'Download CV'
-    slide1: slide1.jpg
-    slide2: slide2.jpg
-    slide3: slide3.jpg
-    slide4: slide4.jpg
-    slide5: slide5.jpg
-    slide6: slide6.jpg
-    slide7: slide7.jpg
+    slides:
+        -
+            slide: slide1.jpg
+        -
+            slide: slide2.jpg
+        -
+            slide: slide3.jpg
+        -
+            slide: slide4.jpg
+        -
+            slide: slide5.jpg
+        -
+            slide: slide6.jpg
+        -
+            slide: slide7.jpg
 ---
 

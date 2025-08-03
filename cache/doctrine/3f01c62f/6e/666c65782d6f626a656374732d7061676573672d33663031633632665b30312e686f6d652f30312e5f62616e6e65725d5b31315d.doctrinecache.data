@@ -1,0 +1,6 @@
+1753945827
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:12:"home/_banner";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:6:"Banner";s:12:"body_classes";s:7:"modular";s:7:"content";a:2:{s:10:"owner_name";s:16:"MD SAROWER JAHAN";s:6:"banner";s:10:"banner.png";}}s:11:"frontmatter";s:100:"title: Banner
+body_classes: modular
+content:
+    owner_name: MD SAROWER JAHAN
+    banner: banner.png";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:12:"home/_banner";s:11:"storage_key";s:18:"01.home/01._banner";s:8:"template";s:6:"banner";s:17:"storage_timestamp";i:1753706865;s:8:"markdown";a:1:{s:0:"";a:1:{s:6:"banner";i:1748108649;}}s:8:"checksum";s:32:"e2605ebdfd510865206969ef7c775a69";}}

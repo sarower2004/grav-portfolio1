@@ -50,9 +50,14 @@
 
      <!-- Initialize Swiper -->
     <script type="text/javascript">
-      var swiper = new Swiper(".card_slider", {
+       var swiper = new Swiper(".card_slider", {
         slidesPerView: 1,
         spaceBetween: 15,
+        loop: true,
+        speed: 1000,
+        autoplay:{
+          delay: 2000,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -61,7 +66,14 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      });
+      }); 
+
+    var swiper = new Swiper(".hobby_slide", {
+      effect: "cards",
+      grabCursor: true,
+      
+    });
+  
     </script>
 
    

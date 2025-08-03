@@ -89,9 +89,14 @@ class __TwigTemplate_23af89a18e148076d966641d8f33666a9125579ab202d934e08c74a0088
 
      <!-- Initialize Swiper -->
     <script type=\"text/javascript\">
-      var swiper = new Swiper(\".card_slider\", {
+       var swiper = new Swiper(\".card_slider\", {
         slidesPerView: 1,
         spaceBetween: 15,
+        loop: true,
+        speed: 1000,
+        autoplay:{
+          delay: 2000,
+        },
         pagination: {
           el: \".swiper-pagination\",
           clickable: true,
@@ -100,7 +105,14 @@ class __TwigTemplate_23af89a18e148076d966641d8f33666a9125579ab202d934e08c74a0088
         nextEl: \".swiper-button-next\",
         prevEl: \".swiper-button-prev\",
       },
-      });
+      }); 
+
+    var swiper = new Swiper(\".hobby_slide\", {
+      effect: \"cards\",
+      grabCursor: true,
+      
+    });
+  
     </script>
 
    
@@ -129,7 +141,7 @@ class __TwigTemplate_23af89a18e148076d966641d8f33666a9125579ab202d934e08c74a0088
 
     public function getDebugInfo()
     {
-        return array (  115 => 32,  112 => 31,  84 => 46,  71 => 35,  69 => 31,  66 => 30,  64 => 29,  48 => 16,  31 => 1,);
+        return array (  127 => 32,  124 => 31,  84 => 46,  71 => 35,  69 => 31,  66 => 30,  64 => 29,  48 => 16,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -194,9 +206,14 @@ class __TwigTemplate_23af89a18e148076d966641d8f33666a9125579ab202d934e08c74a0088
 
      <!-- Initialize Swiper -->
     <script type=\"text/javascript\">
-      var swiper = new Swiper(\".card_slider\", {
+       var swiper = new Swiper(\".card_slider\", {
         slidesPerView: 1,
         spaceBetween: 15,
+        loop: true,
+        speed: 1000,
+        autoplay:{
+          delay: 2000,
+        },
         pagination: {
           el: \".swiper-pagination\",
           clickable: true,
@@ -205,7 +222,14 @@ class __TwigTemplate_23af89a18e148076d966641d8f33666a9125579ab202d934e08c74a0088
         nextEl: \".swiper-button-next\",
         prevEl: \".swiper-button-prev\",
       },
-      });
+      }); 
+
+    var swiper = new Swiper(\".hobby_slide\", {
+      effect: \"cards\",
+      grabCursor: true,
+      
+    });
+  
     </script>
 
    

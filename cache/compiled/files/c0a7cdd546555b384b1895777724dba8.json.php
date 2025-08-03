@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/grav-develop/Project_3/user/data/flex/indexes/pages.json',
-    'modified' => 1753714270,
-    'size' => 887,
+    'modified' => 1753951652,
+    'size' => 1122,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1753714270,
-        'count' => 4,
+        'timestamp' => 1753951652,
+        'count' => 5,
         'index' => [
             '' => [
                 'key' => '',
@@ -23,7 +23,7 @@ return [
                 'key' => 'home',
                 'storage_key' => '01.home',
                 'template' => 'home',
-                'storage_timestamp' => 1753711319,
+                'storage_timestamp' => 1753945229,
                 'markdown' => [
                     '' => [
                         'home' => 1753704764
@@ -31,9 +31,10 @@ return [
                 ],
                 'children' => [
                     '01._banner' => 1753706865,
-                    '02._about' => 1753711319
+                    '02._about' => 1753880852,
+                    '03._hobby' => 1753945229
                 ],
-                'checksum' => '62484c3d09432362644f5ec36c4c76e7'
+                'checksum' => '1809942bd5d6ddf58a7d1c34ba294555'
             ],
             '01.home/01._banner' => [
                 'key' => 'home/_banner',
@@ -51,13 +52,25 @@ return [
                 'key' => 'home/_about',
                 'storage_key' => '01.home/02._about',
                 'template' => 'about',
-                'storage_timestamp' => 1753714270,
+                'storage_timestamp' => 1753880852,
                 'markdown' => [
                     '' => [
-                        'about' => 1753714270
+                        'about' => 1753880852
                     ]
                 ],
-                'checksum' => '310f67e9032169569176c90923473fce'
+                'checksum' => 'b4ebd4b5c620b1798f47eddddb2fb18d'
+            ],
+            '01.home/03._hobby' => [
+                'key' => 'home/_hobby',
+                'storage_key' => '01.home/03._hobby',
+                'template' => 'hobby',
+                'storage_timestamp' => 1753951651,
+                'markdown' => [
+                    '' => [
+                        'hobby' => 1753951651
+                    ]
+                ],
+                'checksum' => '6bdf189bf1da8c6c76862b3c46aadd08'
             ]
         ]
     ]

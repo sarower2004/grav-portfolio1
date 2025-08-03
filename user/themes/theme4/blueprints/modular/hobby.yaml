@@ -1,0 +1,42 @@
+title: Hobby
+'@extends':
+  type: default
+
+form:
+  fields:
+    tabs:
+
+      fields:
+        content: 
+
+          fields:
+            newSection:
+              type: section
+              title: About Section
+              fields:
+                header.content.heading_1:
+                  type: text
+                  label: Heading
+                header.content.heading_2:
+                  type: text
+                  label: Heading
+                header.content.slides_1:
+                  type: list
+                  label: Slides
+                  fields:
+                    .slide:
+                      type: pagemediaselect
+                      label: Slide
+                      preview_images: true
+                header.content.slides_2:
+                  type: list
+                  label: Slides
+                  fields:
+                    .slide:
+                      type: pagemediaselect
+                      label: Slide
+                      preview_images: true
+                      
+              
+                  
+                

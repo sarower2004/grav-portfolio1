@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/grav-develop/Project_3/user/themes/theme4/blueprints/modular/about.yaml',
-    'modified' => 1753714031,
-    'size' => 1416,
+    'modified' => 1753805719,
+    'size' => 896,
     'data' => [
         'title' => 'About',
         '@extends' => [
@@ -31,33 +31,16 @@ return [
                                             'type' => 'text',
                                             'label' => 'btn'
                                         ],
-                                        'header.content.slide1' => [
-                                            'type' => 'pagemediaselect',
-                                            'label' => 'Slide 1'
-                                        ],
-                                        'header.content.slide2' => [
-                                            'type' => 'pagemediaselect',
-                                            'label' => 'Slide 2'
-                                        ],
-                                        'header.content.slide3' => [
-                                            'type' => 'pagemediaselect',
-                                            'label' => 'Slide 3'
-                                        ],
-                                        'header.content.slide4' => [
-                                            'type' => 'pagemediaselect',
-                                            'label' => 'Slide 4'
-                                        ],
-                                        'header.content.slide5' => [
-                                            'type' => 'pagemediaselect',
-                                            'label' => 'Slide 5'
-                                        ],
-                                        'header.content.slide6' => [
-                                            'type' => 'pagemediaselect',
-                                            'label' => 'Slide 6'
-                                        ],
-                                        'header.content.slide7' => [
-                                            'type' => 'pagemediaselect',
-                                            'label' => 'Slide 7'
+                                        'header.content.slides' => [
+                                            'type' => 'list',
+                                            'label' => 'Slides',
+                                            'fields' => [
+                                                '.slide' => [
+                                                    'type' => 'pagemediaselect',
+                                                    'label' => 'Slide',
+                                                    'preview_images' => true
+                                                ]
+                                            ]
                                         ]
                                     ]
                                 ]

@@ -1,12 +1,13 @@
 {% set content = page.header.content %}
 {% set title = page.header.title %}
+{% set slides = content.slides %}
 
 
-{% block conntent %}
+{% block content %}
     <section class="about_section">
         <div class"container">
-            <div class="row">
-                <div class="col-6">
+            <div class="row responsive_about">
+                <div class="col-12 col-xl-6 md-4">
                     <h2> {{page.title}} </h2>
                     <div class="title_underline"></div>
                     <div class="about_text">
@@ -15,45 +16,17 @@
                         <a class="btn"> {{content.btn}} </a>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-xl-6 md-4">
                     <div class="slider_container">
                         <div class="swiper card_slider">
                             <div class="swiper-wrapper">
+                            {% for item in slides %}
                                 <div class="swiper-slide">
                                     <div class="image_box">
-                                    <img src="{{page.media[content.slide1].url}}" alt="demo.png"/>
+                                    <img src="{{page.media[item.slide].url}}" alt="demo.png"/>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="image_box">
-                                    <img src="{{page.media[content.slide2].url}}" alt="demo.png"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image_box">
-                                    <img src="{{page.media[content.slide3].url}}" alt="demo.png"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image_box">
-                                    <img src="{{page.media[content.slide4].url}}" alt="demo.png"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image_box">
-                                    <img src="{{page.media[content.slide5].url}}" alt="demo.png"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image_box">
-                                    <img src="{{page.media[content.slide6].url}}" alt="demo.png"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image_box">
-                                    <img src="{{page.media[content.slide7].url}}" alt="demo.png"/>
-                                    </div>
-                                </div>
+                            {% endfor %}
                             </div>
                                 <div class="swiper-button-next"></div>
                                  <div class="swiper-button-prev"></div>

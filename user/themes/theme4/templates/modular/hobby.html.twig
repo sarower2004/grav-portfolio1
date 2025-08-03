@@ -1,0 +1,53 @@
+{% set content = page.header.content %}
+{% set slide_1 = content.slides_1 %}
+{% set slide_2 = content.slides_2 %}
+
+
+
+{% block content %}
+
+    <section class="hobby_section">
+        <div class="container">
+            <div class="col-6 ">
+                <div class="swiper hobby_slide">
+                    <div class="swiper-wrapper">
+                        {% for item_p in slide_1 %}
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="{{page.media[item_p.slide].url}}">
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ">
+                <div class="swiper hobby_slide">
+                    <div class="swiper-wrapper">
+                        {% for item_a in slide_2 %}
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="{{page.media[item_a.slide].url}}">
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+           {# <div class="col-12 col-xl-6">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    {% for slide1 in slide_1 %}
+                        <div class="swiper-slide">
+                            <divL class="image_box">
+                                <img src="{{page.media[slide1.slide].url}}" alt="slide1">
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div> #}
+        </div> 
+    </section>
+
+{% endblock %}

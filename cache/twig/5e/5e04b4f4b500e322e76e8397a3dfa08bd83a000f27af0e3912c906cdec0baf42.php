@@ -21,7 +21,7 @@ class __TwigTemplate_17d9236f3059c0ceaf918e36f17ef41f0ba06215e767a24ac167bf81a0f
         $this->parent = false;
 
         $this->blocks = [
-            'conntent' => [$this, 'block_conntent'],
+            'content' => [$this, 'block_content'],
         ];
     }
 
@@ -32,101 +32,67 @@ class __TwigTemplate_17d9236f3059c0ceaf918e36f17ef41f0ba06215e767a24ac167bf81a0f
         // line 2
         $context["title"] = $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "title", []);
         // line 3
+        $context["slides"] = $this->getAttribute(($context["content"] ?? null), "slides", []);
+        // line 4
         echo "
 
 ";
-        // line 5
-        $this->displayBlock('conntent', $context, $blocks);
+        // line 6
+        $this->displayBlock('content', $context, $blocks);
     }
 
-    public function block_conntent($context, array $blocks = [])
+    public function block_content($context, array $blocks = [])
     {
-        // line 6
+        // line 7
         echo "    <section class=\"about_section\">
         <div class\"container\">
-            <div class=\"row\">
-                <div class=\"col-6\">
+            <div class=\"row responsive_about\">
+                <div class=\"col-12 col-xl-6 md-4\">
                     <h2> ";
-        // line 10
+        // line 11
         echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
         echo " </h2>
                     <div class=\"title_underline\"></div>
                     <div class=\"about_text\">
                         <h1> ";
-        // line 13
+        // line 14
         echo twig_escape_filter($this->env, $this->getAttribute(($context["content"] ?? null), "heading", []), "html", null, true);
         echo " </h1>
                         <p> ";
-        // line 14
+        // line 15
         echo twig_escape_filter($this->env, $this->getAttribute(($context["content"] ?? null), "description", []), "html", null, true);
         echo " </p>
                         <a class=\"btn\"> ";
-        // line 15
+        // line 16
         echo twig_escape_filter($this->env, $this->getAttribute(($context["content"] ?? null), "btn", []), "html", null, true);
         echo " </a>
                     </div>
                 </div>
-                <div class=\"col-6\">
+                <div class=\"col-12 col-xl-6 md-4\">
                     <div class=\"slider_container\">
                         <div class=\"swiper card_slider\">
                             <div class=\"swiper-wrapper\">
-                                <div class=\"swiper-slide\">
+                            ";
+        // line 23
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["slides"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+            // line 24
+            echo "                                <div class=\"swiper-slide\">
                                     <div class=\"image_box\">
                                     <img src=\"";
-        // line 24
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute(($context["content"] ?? null), "slide1", []), [], "array"), "url", []), "html", null, true);
-        echo "\" alt=\"demo.png\"/>
+            // line 26
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute($context["item"], "slide", []), [], "array"), "url", []), "html", null, true);
+            echo "\" alt=\"demo.png\"/>
                                     </div>
                                 </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"";
-        // line 29
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute(($context["content"] ?? null), "slide2", []), [], "array"), "url", []), "html", null, true);
-        echo "\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"";
-        // line 34
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute(($context["content"] ?? null), "slide3", []), [], "array"), "url", []), "html", null, true);
-        echo "\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"";
-        // line 39
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute(($context["content"] ?? null), "slide4", []), [], "array"), "url", []), "html", null, true);
-        echo "\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"";
-        // line 44
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute(($context["content"] ?? null), "slide5", []), [], "array"), "url", []), "html", null, true);
-        echo "\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"";
-        // line 49
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute(($context["content"] ?? null), "slide6", []), [], "array"), "url", []), "html", null, true);
-        echo "\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"";
-        // line 54
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute(($context["content"] ?? null), "slide7", []), [], "array"), "url", []), "html", null, true);
-        echo "\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                            </div>
+                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 30
+        echo "                            </div>
                                 <div class=\"swiper-button-next\"></div>
                                  <div class=\"swiper-button-prev\"></div>
                                  <div class=\"swiper-pagination\"></div>
@@ -154,7 +120,7 @@ class __TwigTemplate_17d9236f3059c0ceaf918e36f17ef41f0ba06215e767a24ac167bf81a0f
 
     public function getDebugInfo()
     {
-        return array (  125 => 54,  117 => 49,  109 => 44,  101 => 39,  93 => 34,  85 => 29,  77 => 24,  65 => 15,  61 => 14,  57 => 13,  51 => 10,  45 => 6,  39 => 5,  35 => 3,  33 => 2,  31 => 1,);
+        return array (  95 => 30,  85 => 26,  81 => 24,  77 => 23,  67 => 16,  63 => 15,  59 => 14,  53 => 11,  47 => 7,  41 => 6,  37 => 4,  35 => 3,  33 => 2,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -169,13 +135,14 @@ class __TwigTemplate_17d9236f3059c0ceaf918e36f17ef41f0ba06215e767a24ac167bf81a0f
     {
         return new Source("{% set content = page.header.content %}
 {% set title = page.header.title %}
+{% set slides = content.slides %}
 
 
-{% block conntent %}
+{% block content %}
     <section class=\"about_section\">
         <div class\"container\">
-            <div class=\"row\">
-                <div class=\"col-6\">
+            <div class=\"row responsive_about\">
+                <div class=\"col-12 col-xl-6 md-4\">
                     <h2> {{page.title}} </h2>
                     <div class=\"title_underline\"></div>
                     <div class=\"about_text\">
@@ -184,45 +151,17 @@ class __TwigTemplate_17d9236f3059c0ceaf918e36f17ef41f0ba06215e767a24ac167bf81a0f
                         <a class=\"btn\"> {{content.btn}} </a>
                     </div>
                 </div>
-                <div class=\"col-6\">
+                <div class=\"col-12 col-xl-6 md-4\">
                     <div class=\"slider_container\">
                         <div class=\"swiper card_slider\">
                             <div class=\"swiper-wrapper\">
+                            {% for item in slides %}
                                 <div class=\"swiper-slide\">
                                     <div class=\"image_box\">
-                                    <img src=\"{{page.media[content.slide1].url}}\" alt=\"demo.png\"/>
+                                    <img src=\"{{page.media[item.slide].url}}\" alt=\"demo.png\"/>
                                     </div>
                                 </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"{{page.media[content.slide2].url}}\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"{{page.media[content.slide3].url}}\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"{{page.media[content.slide4].url}}\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"{{page.media[content.slide5].url}}\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"{{page.media[content.slide6].url}}\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
-                                <div class=\"swiper-slide\">
-                                    <div class=\"image_box\">
-                                    <img src=\"{{page.media[content.slide7].url}}\" alt=\"demo.png\"/>
-                                    </div>
-                                </div>
+                            {% endfor %}
                             </div>
                                 <div class=\"swiper-button-next\"></div>
                                  <div class=\"swiper-button-prev\"></div>
