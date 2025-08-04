@@ -1,0 +1,35 @@
+1754291368
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"home/_hobby";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:5:"Hobby";s:12:"body_classes";s:7:"modular";s:7:"content";a:5:{s:7:"cecking";s:5:"1.jpg";s:9:"heading_1";s:11:"Professions";s:9:"heading_2";s:8:"Animanls";s:8:"slides_1";a:6:{i:0;a:1:{s:5:"slide";s:5:"1.jpg";}i:1;a:1:{s:5:"slide";s:5:"2.jpg";}i:2;a:1:{s:5:"slide";s:5:"3.jpg";}i:3;a:1:{s:5:"slide";s:5:"4.jpg";}i:4;a:1:{s:5:"slide";s:5:"5.jpg";}i:5;a:1:{s:5:"slide";s:5:"6.jpg";}}s:8:"slides_2";a:7:{i:0;a:1:{s:5:"slide";s:6:"A1.jpg";}i:1;a:1:{s:5:"slide";s:6:"A2.jpg";}i:2;a:1:{s:5:"slide";s:6:"A3.jpg";}i:3;a:1:{s:5:"slide";s:6:"A4.jpg";}i:4;a:1:{s:5:"slide";s:6:"A6.jpg";}i:5;a:1:{s:5:"slide";s:6:"A7.jpg";}i:6;a:1:{s:5:"slide";s:6:"A8.jpg";}}}}s:11:"frontmatter";s:603:"title: Hobby
+body_classes: modular
+content:
+    cecking: 1.jpg
+    heading_1: Professions
+    heading_2: Animanls
+    slides_1:
+        -
+            slide: 1.jpg
+        -
+            slide: 2.jpg
+        -
+            slide: 3.jpg
+        -
+            slide: 4.jpg
+        -
+            slide: 5.jpg
+        -
+            slide: 6.jpg
+    slides_2:
+        -
+            slide: A1.jpg
+        -
+            slide: A2.jpg
+        -
+            slide: A3.jpg
+        -
+            slide: A4.jpg
+        -
+            slide: A6.jpg
+        -
+            slide: A7.jpg
+        -
+            slide: A8.jpg";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:11:"home/_hobby";s:11:"storage_key";s:17:"01.home/03._hobby";s:8:"template";s:5:"hobby";s:17:"storage_timestamp";i:1754203987;s:8:"markdown";a:1:{s:0:"";a:1:{s:5:"hobby";i:1754203987;}}s:8:"checksum";s:32:"00497bffd27e35b2f760ff3adf6269c6";}}

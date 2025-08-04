@@ -8,45 +8,56 @@
 
     <section class="hobby_section">
         <div class="container">
-            <div class="col-6 ">
-                <div class="swiper hobby_slide">
-                    <div class="swiper-wrapper">
-                        {% for item_p in slide_1 %}
-                            <div class="swiper-slide">
-                                <div class="img_box">
-                                    <img src="{{page.media[item_p.slide].url}}">
-                                </div>
-                            </div>
-                        {% endfor %}
+            <div class="hobby_responsive"> 
+                <div class="col-6 ">
+                    <div class="hobby_title">
+                        <h2>{{ content.heading_1 }}</h2>
                     </div>
-                </div>
-            </div>
-            <div class="col-6 ">
-                <div class="swiper hobby_slide">
-                    <div class="swiper-wrapper">
-                        {% for item_a in slide_2 %}
-                            <div class="swiper-slide">
-                                <div class="img_box">
-                                    <img src="{{page.media[item_a.slide].url}}">
+                    <div class="swiper hobby_slide">
+                        <div class="swiper-wrapper">
+                            {% for item_p in slide_1 %}
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="{{page.media[item_p.slide].url}}">
+                                    </div>
                                 </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-           {# <div class="col-12 col-xl-6">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                    {% for slide1 in slide_1 %}
-                        <div class="swiper-slide">
-                            <divL class="image_box">
-                                <img src="{{page.media[slide1.slide].url}}" alt="slide1">
-                            </div>
+                            {% endfor %}
                         </div>
-                    {% endfor %}
                     </div>
                 </div>
-            </div> #}
+                <div class="col-6 ">
+                    <div class="hobby_title">
+                        <h2>{{ content.heading_2 }}</h2>
+                    </div>
+                    <div class="swiper hobby_slide">
+                        <div class="swiper-wrapper">
+                            {% for item_a in slide_2 %}
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="{{page.media[item_a.slide].url}}">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                    <div class="hobby_title">
+                        <h2>{{ content.heading_2 }}</h2>
+                    </div>
+                    <div class="swiper window_slide">
+                        <div class="swiper-wrapper">
+                            {% for item_a in slide_2 %}
+                                <div class="swiper-slide window_swiper">
+                                    <div class="img_box1">
+                                        <img src="{{page.media[item_a.slide].url}}">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+            </div>
         </div> 
     </section>
 

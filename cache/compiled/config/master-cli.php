@@ -1,127 +1,127 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1753704386,
-    'checksum' => '36d4f88043cca6a647ffb128065332ad',
+    'timestamp' => 1754207779,
+    'checksum' => '8d6822ba33dd8db7c00060939810fa2a',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1746420821
+                'modified' => 1754202964
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1746353643
+                'modified' => 1754202964
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1748108374
+                'modified' => 1754202964
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1753521761
+                'modified' => 1754202964
             ],
             'themes/quark' => [
                 'file' => 'user/config/themes/quark.yaml',
-                'modified' => 1746426478
+                'modified' => 1754202964
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
-                'modified' => 1746353645
+                'modified' => 1754202964
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202962
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202962
             ],
             'mime' => [
                 'file' => 'system/config/mime.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202962
             ],
             'permissions' => [
                 'file' => 'system/config/permissions.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202962
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202962
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1748108423
+                'modified' => 1754202962
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1747756146
+                'modified' => 1754202962
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202964
             ],
             'plugins/devtools' => [
                 'file' => 'user/plugins/devtools/devtools.yaml',
-                'modified' => 1745192428
+                'modified' => 1754202965
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202965
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202966
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202966
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202967
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202967
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202967
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202967
             ]
         ],
         'user/themes' => [
             'themes/bullet' => [
                 'file' => 'user/themes/bullet/bullet.yaml',
-                'modified' => 1746499399
+                'modified' => 1754202968
             ],
             'themes/classic' => [
                 'file' => 'user/themes/classic/classic.yaml',
-                'modified' => 1746443226
+                'modified' => 1754202968
             ],
             'themes/mytheme' => [
                 'file' => 'user/themes/mytheme/mytheme.yaml',
-                'modified' => 1746427129
+                'modified' => 1754202968
             ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1730115083
+                'modified' => 1754202968
             ],
             'themes/theme4' => [
                 'file' => 'user/themes/theme4/theme4.yaml',
-                'modified' => 1753515947
+                'modified' => 1754202968
             ],
             'themes/theme99' => [
                 'file' => 'user/themes/theme99/theme99.yaml',
-                'modified' => 1746499399
+                'modified' => 1754202968
             ]
         ]
     ],

@@ -2,7 +2,6 @@
 title: Hobby
 body_classes: modular
 content:
-    cecking: 1.jpg
     heading_1: Professions
     heading_2: Animanls
     slides_1:

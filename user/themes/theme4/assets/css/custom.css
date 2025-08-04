@@ -144,37 +144,9 @@ blockquote {
     margin: 0 auto;
   }
 
-  /* @media (min-width: 320px){
-    .responsive_about{
-        flex-direction: column;
-    }
-  }
-    @media (min-width: 480px){
-    .responsive_about{
-        flex-direction: column;
-    }
-  }
-    @media (min-width: 768px){
-    .responsive_about{
-        flex-direction: row;
-    }
-  }
-    @media (min-width: 1200px){
-    .responsive_about{
-        flex-direction: row;
-    }
-  } */
-
-  /* Hobby part start */
-  /* .image_box img{
-    max-width: 40%;
-  } */
-  /* .swiper-slide .image_box {
-    max-width: 20%;
-    margin-bottom: 20px;
-  } */  
+ 
    .hobby_section{
-    padding-left: 200px;
+    padding-left: 250px;
    }
     .swiper {
       width: 240px;
@@ -186,4 +158,25 @@ blockquote {
     width: 100%;
   }
   
-  
+  .hobby_responsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+   .window_slide {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+
+    .window_swiper {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .img_box1 img {
+      display: block;
+      width: 50%;
+    }
